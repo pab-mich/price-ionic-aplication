@@ -12,8 +12,14 @@ const createNewProduct = (name, price) => {
   productList.appendChild(ionCard);
 }
 
+const clearInputs = () => {
+  produtName.value = '';
+  productPrice.value= '';
+}
+
 buttonSave.addEventListener('click', () => {
   const name = productName.value;
   const price = productPrice.value;
   createNewProduct(name, price)
+  clearInputs()
 })
