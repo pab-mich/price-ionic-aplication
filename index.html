@@ -43,18 +43,18 @@
                   <ion-label color="dark" position="floating" color="dark">
                     Product Name:
                   </ion-label>
-                  <ion-input type="text" background-color="dark" ></ion-input>
+                  <ion-input type="text" id="productName" background-color="dark" ></ion-input>
                 </ion-item>
                 <ion-item>
                   <ion-label position="floating">
                     Product Price:
                   </ion-label>
-                  <ion-input type="number"></ion-input>
+                  <ion-input type="number" id="productPrice"></ion-input>
                 </ion-item>
-                <ion-button color="medium">
+                <ion-button color="medium" id="button-save">
                   <ion-icon name="add-circle" slot="start"></ion-icon> Save
                 </ion-button>
-                <ion-button color="medium">
+                <ion-button color="medium" id="button-clear">
                   <ion-icon name="trash" slot="start"></ion-icon>Clear
                 </ion-button>
               </ion-card-content>
@@ -67,6 +67,7 @@
 
   <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
   <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
