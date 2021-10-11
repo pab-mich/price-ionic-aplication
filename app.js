@@ -13,7 +13,7 @@ const createNewProduct = (name, price) => {
 }
 
 const clearInputs = () => {
-  produtName.value = '';
+  productName.value = '';
   productPrice.value= '';
 }
 
@@ -23,3 +23,5 @@ buttonSave.addEventListener('click', () => {
   createNewProduct(name, price)
   clearInputs()
 })
+
+buttonCancel.addEventListener('click', clearInputs )
