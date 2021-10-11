@@ -20,6 +20,13 @@ const clearInputs = () => {
 buttonSave.addEventListener('click', () => {
   const name = productName.value;
   const price = productPrice.value;
+
+  //for the validation
+  if(price <= 0 || name == ''){
+    alert("please! complete the inputs with correct values")
+    return; // stop the code here!
+  }
+
   createNewProduct(name, price)
   clearInputs()
 })
