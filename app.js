@@ -17,13 +17,25 @@ const clearInputs = () => {
   productPrice.value= '';
 }
 
+//alert ionic component
+const presentAlert = () => {
+  const alert = document.createElement('ion-alert')
+  alert.header = 'invalid data';
+  alert.subHeader = 'please veryfy the inputs'
+  alert.message = 'incorrect name or price'
+  alert.buttons = ['ok'];
+
+  document.body.appendChild(alert);
+  return alert.present() // with the method present the ion-lert is in the html body
+}
+
 buttonSave.addEventListener('click', () => {
   const name = productName.value;
   const price = productPrice.value;
 
   //for the validation
   if(price <= 0 || name == ''){
-    alert("please! complete the inputs with correct values")
+    presentAlert()
     return; // stop the code here!
   }
 
