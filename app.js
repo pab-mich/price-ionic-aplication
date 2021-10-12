@@ -17,7 +17,7 @@ const createNewProduct = (name, price) => {
 
 const clearInputs = () => {
   productName.value = '';
-  productPrice.value= '';
+  productPrice.value = '';
 }
 
 //alert ionic component
@@ -37,7 +37,7 @@ buttonSave.addEventListener('click', () => {
   const price = productPrice.value;
 
   //for the validation
-  if(price <= 0 || name == ''){
+  if (price <= 0 || name == '') {
     presentAlert()
     return; // stop the code here!
   }
@@ -49,4 +49,4 @@ buttonSave.addEventListener('click', () => {
   clearInputs()
 })
 
-buttonCancel.addEventListener('click', clearInputs )
+buttonCancel.addEventListener('click', clearInputs)
